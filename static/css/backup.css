@@ -1,0 +1,50 @@
+body {
+	font: 400 100%/1.625 "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	color: #3B3B3B;
+}
+div.content{
+    margin:10px}
+ul.mainmenu{
+	padding:15px;
+	margin:30px auto;
+	border:1px solid #aaa;
+	font-size:16px;
+	font-style:italic;
+	color:#000;
+	position:relative;
+
+}
+form-contact{
+	padding:15px;
+	margin:30px auto;
+	border:1px solid #aaa;
+	font-size:16px;
+	font-style:italic;
+	color:#000;
+	position:relative;
+
+}
+ul.mainmenup{
+	margin:0;
+	padding:0;
+}
+
+<ul class="list-posts">
+    {% for pp in html %}
+    <li>
+        <p class="Title"><a href="{{url_for('showHtml', alias=pp[3])}}"><{{pp[1]}}</a></p>
+        <p class="annonce">{{pp[2][:50]}}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+<ul class="list-posts">
+    {% for p in posts %}
+    <li>
+        <p class="Title"><a href="{{url_for('showPost', id_post=p[0])}}"><{{p[1]}}</a></p>
+        <p class="annince">{{p[2][:50]}}</p>
+    </li>
+    {% endfor %}
+</ul>
+

@@ -1,0 +1,87 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #040000;
+  background-color: #ffffff;
+}
+ul.meinmenu{
+    background:#3F4137;
+	padding:15px;
+	margin:30px auto;
+	border:1px solid #aaa;
+	font-size:16px;
+	font-style:italic;
+	color:#73b0fd;
+	position:relative;
+
+}
+ul.meinmenu p{
+	padding:15px;
+	margin:30px auto;
+	color:#73b0fd;
+}
+
+ul.meinmenu li {
+	padding:15px;
+	margin:30px auto;
+	color:#73b0fd;
+
+}
+ul.meinmenu li a:hover{
+    text-decoration: none;
+	padding:15px;
+	margin:30px auto;
+	color:#73b0fd;
+}
+div.content{
+    background:#ffffff;
+    color:#0059b2;
+    margin:10px}
+.flash {padding: 10px;}
+.flash.success {
+border: 1px solid #21DB56;
+background: #AEFFC5;}
+.flash.error {border: 1px solid #FF4343;}
+
+.form-contact label {
+display: inline-block;
+min-width: 80;}
+.form-contact{ margin:10px 0 10px 0;}
+.form-contact input[type=submit], textarea {
+font-size: 16px;}
+.form-contact.invalid{
+    background: #FF9898;}
+.form-contact.invalid-feedback{
+	color: #FF9898;}
+
+.profile-ava {
+width:130px;
+text-align: center;
+overflow: hidden;
+background: #eee;
+padding: 10px;
+}
+.profile-ava img {max-width 150px; height: 150px}
+.profile-load{
+margin-top:10px;
+overflow: hidden;
+max-width:150px;
+}
+.profile-load input[type=submit], input[type=file]{
+width: 100%;
+font - size: 18px:
+}
+.profile-load  p{
+padding:0;
+margin: 5px 0 0 0;
+}
+.profile-panel {padding: 0 0 0 10px;}
+ul.profile-info{
+list-style: none;
+margin: 10px 0 0 0;
+padding:0;
+collor:#7E652F;
+}
+ul.profile-info li{margin-top:10px;}
+
+
+

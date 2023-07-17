@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% block content -%}
+{{ super() }}
+<p><a href="{{ url_for('admin.index') }}">Admin Padnel</a></p>
+<hr>
+<h2> List of posts</h2>
+
+<ul class="list-posts">
+    {% for pp in html %}
+    <li>
+        <p class="Title"><a href="{{url_for('showHtml', alias=pp[3])}}"><{{pp[1]}}</a></p>
+        <p class="annonce">{{pp[2][:50]}}</p>
+    </li>
+    {% endfor %}
+    {% for ppp in posts %}
+    <li>
+        <p class="Title"><a href="{{url_for('showPost', id_post=ppp[0])}}"><{{ppp[1]}}</a></p>
+        <p class="annonce">{{ppp[2][:50]}}</p>
+
+    </li>
+    {% endfor %}
+</ul>
+
+<p>Main site content</p>
+{% endblock -%}

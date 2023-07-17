@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content -%}
+<ul class="list-posts">
+    {% for p in list %}
+    <li>
+        <p> id: {{p.id}}, email:  {{p.email}}}</p>
+        <ul>
+            <li> Name: {{p.pr.name}}</li>
+             <li> Age: {{p.pr.age}}</li>
+             <li> City: {{p.pr.city}}</li>
+
+        </ul>
+
+    </li>
+    {% endfor %}
+</ul>
+{{ super() }}
+{% endblock -%}
